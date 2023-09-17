@@ -5,7 +5,7 @@ clean:
 	find . -type f -name "*.py[co]" -delete
 	find . -type d -name "__pycache__" -delete
 lint:
-	pylint main.py
+	pylint --disable=R,C main.py
 
 format:
 	black .
